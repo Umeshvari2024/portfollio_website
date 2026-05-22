@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editor</title>
+</head>
+<body>
+
+<h2>Edit Portfolio</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+<button onclick="save()">Save</button>
+
+<script>
+function save(){
+    const name = document.getElementById("name").value;
+    localStorage.setItem("username", name);
+    alert("Saved!");
+}
+</script>
+
+</body>
+</html>
