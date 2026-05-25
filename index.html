@@ -2,645 +2,569 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umeshvari Portfolio</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio Website</title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
-<script src="script.js"></script>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="header">
 
     <nav class="navbar">
 
-        <div class="nav-container">
+      <div class="logo">
 
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">Portfolio Builder Website</a>
-            </div>
+        <h2>MyPortfolio</h2>
 
-            <!-- Right Side -->
-            <div class="nav-right-group">
+      </div>
 
-                <!-- Navigation -->
-                <ul class="nav-links">
+      <!-- MOBILE MENU BUTTON -->
 
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
+      <i class="fa-solid fa-bars menu-btn" id="menuBtn"></i>
 
-                    <li>
-                        <a href="#about">About Us</a>
-                    </li>
+      <ul class="nav-links" id="navLinks">
 
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
+        <li><a href="#home">Home</a></li>
 
-                    <li>
-                        <a href="#templates">Templates</a>
-                    </li>
+        <li><a href="#about">About</a></li>
 
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+        <li><a href="#skills">Skills</a></li>
 
-                </ul>
+        <li><a href="#experience">Experience</a></li>
 
-                <!-- Buttons -->
-                <div class="nav-auth">
+        <li><a href="#projects">Projects</a></li>
 
-                    <!-- Dark Mode Button -->
-                    <button id="theme-toggle" class="theme-toggle-btn">
-                        🌙
-                    </button>
+        <li><a href="#contact">Contact</a></li>
 
-                    <!-- Login Button -->
-                    <button class="btn-auth">
-                        Login / Register
-                    </button>
+      </ul>
 
-                </div>
+      <div class="nav-right">
 
-            </div>
+        <!-- LOGIN BUTTON -->
 
-        </div>
+        <button class="login-btn">
+
+          Login
+
+        </button>
+
+        <!-- SIGNUP BUTTON -->
+
+        <button class="signup-btn">
+
+          Sign Up
+
+        </button>
+
+        <!-- DARK MODE -->
+
+        <button id="themeToggle">
+
+          <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+      </div>
 
     </nav>
 
-    <!-- ================= HERO SECTION ================= -->
+  </header>
 
-    <section id="home" class="hero">
+  <!-- ================= HOME SECTION ================= -->
 
-        <div class="hero-overlay"></div>
+  <section class="home" id="home">
 
-        <div class="hero-content">
+    <div class="home-text">
 
-            <h1 class="hero-title">
-                Build Your Dream
-                <span class="highlight-blue">
-                    Portfolio
-                </span>
-            </h1>
+      <h3>Hello 👋</h3>
 
-            <p class="hero-subtitle">
-                Create stunning, professional portfolios using ready-made templates.
-                No coding required — just select, customize, and publish.
-            </p>
+      <h1>
 
-            <div class="hero-buttons">
+        I'm <span>Umeshvari Badgujar</span>
 
-                <button class="btn-get-started">
-                    🚀 Get Started
-                </button>
+      </h1>
 
-                <button class="btn-view-services">
-                    View Services
-                </button>
+      <h2>Frontend Developer</h2>
 
-            </div>
+      <p>
 
-            <div class="hero-stats">
+        I create modern, responsive and user-friendly websites using
+        HTML, CSS, JavaScript, Bootstrap and React. Passionate about
+        beautiful UI design and smooth user experience.
 
-                <div class="stat-item">
-                    <h3>50+</h3>
-                    <p>Templates</p>
-                </div>
+      </p>
 
-                <div class="stat-item">
-                    <h3>10K+</h3>
-                    <p>Users</p>
-                </div>
+      <div class="home-buttons">
 
-                <div class="stat-item">
-                    <h3>99%</h3>
-                    <p>Satisfaction</p>
-                </div>
+        <a href="#contact" class="btn">
 
-            </div>
+          Hire Me
+
+        </a>
+
+        <a href="#projects" class="btn project-btn">
+
+          View Projects
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="home-image">
+
+      <!-- YOUR PHOTO -->
+
+      <img src="images/my-photo.jpg" alt="Profile Image">
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+
+  <section class="about" id="about">
+
+    <div class="about-image">
+
+      <img src="images/my-photo.jpg" alt="About Image">
+
+    </div>
+
+    <div class="about-text">
+
+      <h2>About Me</h2>
+
+      <p>
+
+        I'm a passionate Frontend Developer who loves building
+        modern and responsive websites. I enjoy creating attractive
+        user interfaces and interactive web applications.
+
+      </p>
+
+      <p>
+
+        I have knowledge of HTML, CSS, JavaScript, Bootstrap,
+        React JS and GitHub. My goal is to become a professional
+        Full Stack Web Developer.
+
+      </p>
+
+      <p>
+
+        I always focus on clean code, responsive design and
+        better user experience.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+
+  <section class="skills" id="skills">
+
+    <h2 class="section-title">
+
+      My Skills
+
+    </h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-html5"></i>
+
+        <h3>HTML5</h3>
+
+        <p>Structure of responsive websites.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-css3-alt"></i>
+
+        <h3>CSS3</h3>
+
+        <p>Modern UI design and animations.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-js"></i>
+
+        <h3>JavaScript</h3>
+
+        <p>Interactive and dynamic websites.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-bootstrap"></i>
+
+        <h3>Bootstrap</h3>
+
+        <p>Responsive mobile-first websites.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-react"></i>
+
+        <h3>React JS</h3>
+
+        <p>Component based frontend apps.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-brands fa-github"></i>
+
+        <h3>GitHub</h3>
+
+        <p>Code management and deployment.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-database"></i>
+
+        <h3>MySQL</h3>
+
+        <p>Database handling and queries.</p>
+
+      </div>
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-code"></i>
+
+        <h3>Java</h3>
+
+        <p>Backend and OOP concepts.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= EXPERIENCE SECTION ================= -->
+
+  <section class="experience" id="experience">
+
+    <h2 class="section-title">
+
+      Experience
+
+    </h2>
+
+    <div class="experience-container">
+
+      <div class="experience-card">
+
+        <h3>Frontend Developer Intern</h3>
+
+        <h4>2026 - Present</h4>
+
+        <p>
+
+          Working on responsive websites using HTML, CSS,
+          JavaScript and Bootstrap.
+
+        </p>
+
+      </div>
+
+      <div class="experience-card">
+
+        <h3>React Developer Training</h3>
+
+        <h4>2025 - 2026</h4>
+
+        <p>
+
+          Learned React JS, Components, Props,
+          State Management and API integration.
+
+        </p>
+
+      </div>
+
+      <div class="experience-card">
+
+        <h3>Web Design Projects</h3>
+
+        <h4>2025</h4>
+
+        <p>
+
+          Built Portfolio Websites, E-Commerce Websites
+          and Admin Dashboard projects.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+
+  <section class="projects" id="projects">
+
+    <h2 class="section-title">
+
+      My Projects
+
+    </h2>
+
+    <div class="project-container">
+
+      <!-- PROJECT 1 -->
+
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="project-content">
+
+          <h3>E-Commerce Website</h3>
+
+          <p>
+
+            Responsive shopping website with product cards,
+            navbar and Bootstrap design.
+
+          </p>
 
         </div>
 
-    </section>
+      </div>
 
-    <!-- ================= ABOUT SECTION ================= -->
+      <!-- PROJECT 2 -->
 
-    <section id="about" class="about-new">
+      <div class="project-card">
 
-        <div class="about-header">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop">
 
-            <h1>About Us</h1>
+        <div class="project-content">
 
-            <p>
-                We create modern portfolio experiences that help you stand out in the digital world.
-            </p>
+          <h3>Admin Dashboard</h3>
 
-        </div>
+          <p>
 
-        <div class="about-glass-container">
+            Dashboard with charts, analytics cards,
+            tables and dark mode feature.
 
-            <div class="about-card-content">
-
-                <p>
-                    Our platform is built for developers, designers, and students who want a professional online presence.
-                    With ready-made templates and easy customization, you can build your portfolio in minutes.
-                </p>
-
-                <p>
-                    We focus on performance, clean UI, and modern design trends to help you impress recruiters and clients globally.
-                </p>
-
-                <!-- Stats -->
-                <div class="about-stats-row">
-
-                    <div class="stat-box">
-                        <h2>10K+</h2>
-                        <p>Users</p>
-                    </div>
-
-                    <div class="stat-box">
-                        <h2>50+</h2>
-                        <p>Templates</p>
-                    </div>
-
-                    <div class="stat-box">
-                        <h2>99%</h2>
-                        <p>Satisfaction</p>
-                    </div>
-
-                </div>
-
-                <button class="btn-pink">
-                    Learn More
-                </button>
-
-            </div>
+          </p>
 
         </div>
 
-    </section>
+      </div>
 
-    <!-- ================= SERVICES SECTION ================= -->
+      <!-- PROJECT 3 -->
 
-    <section id="services" class="services-section">
+      <div class="project-card">
 
-        <div class="section-header">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
 
-            <h1>What We Offer</h1>
+        <div class="project-content">
 
-            <p>
-                Everything you need to build a professional portfolio website
-            </p>
+          <h3>Portfolio Website</h3>
 
-        </div>
+          <p>
 
-        <!-- Services Grid -->
+            Modern personal portfolio website with
+            responsive UI and animations.
 
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="icon pink-text">💼</div>
-                <h3>Portfolio Builder</h3>
-                <p>Create stunning portfolio easily.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon pink-text">🎨</div>
-                <h3>Modern Templates</h3>
-                <p>Beautiful UI templates ready to use.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon pink-text">⚡</div>
-                <h3>Fast Setup</h3>
-                <p>Launch your site in minutes.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon pink-text">✏️</div>
-                <h3>Easy Editing</h3>
-                <p>No coding required.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon pink-text">🔐</div>
-                <h3>Secure Login</h3>
-                <p>Safe authentication system.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="icon pink-text">📱</div>
-                <h3>Mobile Friendly</h3>
-                <p>Works on all devices.</p>
-            </div>
+          </p>
 
         </div>
 
-        <!-- Why Choose Us -->
+      </div>
 
-        <div class="why-choose-us">
+      <!-- PROJECT 4 -->
 
-            <h2>Why Choose Us?</h2>
+      <div class="project-card">
 
-            <p>
-                We help developers and students build modern portfolio websites quickly using ready-made templates,
-                fast tools, and secure systems.
-            </p>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop">
 
-            <button class="btn-pink">
-                Get Started
-            </button>
+        <div class="project-content">
 
-        </div>
+          <h3>Food Delivery UI</h3>
 
-    </section>
+          <p>
 
-    <!-- ================= TEMPLATE SECTION ================= -->
+            Attractive food delivery landing page
+            with responsive layout.
 
-    <section id="templates" class="templates-section">
-
-        <div class="section-header">
-
-            <h1>Choose Your Template</h1>
-
-            <p>
-                Click and start editing instantly
-            </p>
+          </p>
 
         </div>
 
-        <!-- Template Grid -->
+      </div>
 
-        <div class="template-grid">
+      <!-- PROJECT 5 -->
 
-            <!-- Template 1 -->
+      <div class="project-card">
 
-            <div class="template-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop">
 
-                <img src="images/t1.png" alt="Template 1">
+        <div class="project-content">
 
-                <div class="template-hover">
-                    <h3>Modern Portfolio</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
+          <h3>Travel Website</h3>
 
-            </div>
+          <p>
 
-            <!-- Template 2 -->
+            Travel booking website with packages
+            and modern design.
 
-            <div class="template-card">
-
-                <img src="images/t2.png" alt="Template 2">
-
-                <div class="template-hover">
-                    <h3>Creative Design</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 3 -->
-
-            <div class="template-card">
-
-                <img src="images/t3.png" alt="Template 3">
-
-                <div class="template-hover">
-                    <h3>Professional Dark</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 4 -->
-
-            <div class="template-card">
-
-                <img src="images/t4.png" alt="Template 4">
-
-                <div class="template-hover">
-                    <h3>Minimalist Look</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 5 -->
-
-            <div class="template-card">
-
-                <img src="images/t5.png" alt="Template 5">
-
-                <div class="template-hover">
-                    <h3>Developer Showcase</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 6 -->
-
-            <div class="template-card">
-
-                <img src="images/t6.png" alt="Template 6">
-
-                <div class="template-hover">
-                    <h3>UI/UX Focus</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 7 -->
-
-            <div class="template-card">
-
-                <img src="images/t7.png" alt="Template 7">
-
-                <div class="template-hover">
-                    <h3>Clean Grid</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 8 -->
-
-            <div class="template-card">
-
-                <img src="images/t8.png" alt="Template 8">
-
-                <div class="template-hover">
-                    <h3>Corporate Style</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
-
-            <!-- Template 9 -->
-
-            <div class="template-card">
-
-                <img src="images/t9.png" alt="Template 9">
-
-                <div class="template-hover">
-                    <h3>Gradient Theme</h3>
-                    <button class="btn-pink">Use Template</button>
-                </div>
-
-            </div>
+          </p>
 
         </div>
 
-        <!-- ================= ACHIEVEMENTS ================= -->
+      </div>
 
-        <div class="achievements-section">
+      <!-- PROJECT 6 -->
 
-            <h2>Our Achievements</h2>
+      <div class="project-card">
 
-            <p>
-                Trusted by thousands of users worldwide
-            </p>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
 
-            <div class="achievements-grid">
+        <div class="project-content">
 
-                <div class="achieve-box">
-                    <h2 class="pink-text">50+</h2>
-                    <p>Templates</p>
-                </div>
+          <h3>Student Portal</h3>
 
-                <div class="achieve-box">
-                    <h2 class="pink-text">10K+</h2>
-                    <p>Users</p>
-                </div>
+          <p>
 
-                <div class="achieve-box">
-                    <h2 class="pink-text">100+</h2>
-                    <p>Projects</p>
-                </div>
+            Student management portal UI with forms,
+            dashboard and tables.
 
-                <div class="achieve-box">
-                    <h2 class="pink-text">5+</h2>
-                    <p>Years Experience</p>
-                </div>
-
-                <div class="achieve-box">
-                    <h2 class="pink-text">99%</h2>
-                    <p>Success Rate</p>
-                </div>
-
-                <div class="achieve-box">
-                    <h2 class="pink-text">4.9★</h2>
-                    <p>User Rating</p>
-                </div>
-
-            </div>
+          </p>
 
         </div>
 
-    </section>
+      </div>
 
-    <!-- ================= CONTACT SECTION ================= -->
+    </div>
 
-    <section id="contact" class="contact-section">
+  </section>
 
-        <div class="contact-header">
+  <!-- ================= CONTACT SECTION ================= -->
 
-            <h1>Contact Us</h1>
+  <section class="contact" id="contact">
 
-            <p>Let's Build Something Great</p>
+    <h2 class="section-title">
 
-            <p>
-                Have an idea or project?
-                Drop a message and we'll get back within 24 hours.
-            </p>
+      Contact Me
 
-        </div>
+    </h2>
 
-        <div class="contact-container">
+    <div class="contact-container">
 
-            <!-- Left Side -->
+      <div class="contact-info">
 
-            <div class="contact-info">
+        <h3>Get In Touch</h3>
 
-                <h2>Contact Information</h2>
+        <p>
 
-                <div class="info-item">
-                    <span class="icon">📧</span>
-                    <p>support@portfolio.com</p>
-                </div>
+          <i class="fa-solid fa-user"></i>
 
-                <div class="info-item">
-                    <span class="icon">📞</span>
-                    <p>+91 98765 43210</p>
-                </div>
+          Umeshvari Badgujar
 
-                <div class="info-item">
-                    <span class="icon">📍</span>
-                    <p>Pune, India</p>
-                </div>
+        </p>
 
-                <!-- Social -->
+        <p>
 
-                <div class="social-links">
+          <i class="fa-solid fa-envelope"></i>
 
-                    <div class="social-btn">Google</div>
+          umeshvari@gmail.com
 
-                    <div class="social-btn">Twitter</div>
+        </p>
 
-                    <div class="social-btn">LinkedIn</div>
+        <p>
 
-                    <div class="social-btn">Instagram</div>
+          <i class="fa-solid fa-phone"></i>
 
-                </div>
+          +91 9876543210
 
-                <p class="response-text">
-                    We usually respond within a few hours.
-                </p>
+        </p>
 
-            </div>
+        <p>
 
-            <!-- Right Side -->
+          <i class="fa-solid fa-location-dot"></i>
 
-            <div class="contact-form">
+          Pune, Maharashtra
 
-                <div class="form-row">
+        </p>
 
-                    <input type="text" placeholder="Full Name">
+      </div>
 
-                    <input type="email" placeholder="Email Address">
+      <!-- CONTACT FORM -->
 
-                </div>
+      <form class="contact-form">
 
-                <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Enter Your Name">
 
-                <textarea rows="5" placeholder="Your Message"></textarea>
+        <input type="email" placeholder="Enter Your Email">
 
-                <button class="btn-send-pink">
-                    Send Message →
-                </button>
+        <textarea rows="6" placeholder="Enter Your Message"></textarea>
 
-            </div>
+        <button type="submit" class="btn">
 
-        </div>
+          Send Message
 
-    </section>
+        </button>
 
-    <!-- ================= FOOTER ================= -->
+      </form>
 
-    <footer class="main-footer">
+    </div>
 
-        <div class="footer-container">
+  </section>
 
-            <!-- Column 1 -->
+  <!-- ================= FOOTER ================= -->
 
-            <div class="footer-col">
+  <footer class="footer">
 
-                <h3 class="footer-logo">
-                    Portfolio Builder
-                </h3>
+    <p>
 
-                <p>
-                    Build modern portfolios using ready-made templates.
-                    Fast, responsive and easy-to-use platform for creators.
-                </p>
+      © 2026 Umeshvari Badgujar | All Rights Reserved
 
-            </div>
+    </p>
 
-            <!-- Column 2 -->
+  </footer>
 
-            <div class="footer-col">
+  <!-- ================= JS ================= -->
 
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#templates">Templates</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- Column 3 -->
-
-            <div class="footer-col">
-
-                <h3>Features</h3>
-
-                <ul>
-
-                    <li>⚡ Fast Setup</li>
-
-                    <li>🎨 Modern UI</li>
-
-                    <li>📱 Mobile Friendly</li>
-
-                    <li>🔐 Secure Login</li>
-
-                </ul>
-
-            </div>
-
-            <!-- Column 4 -->
-
-            <div class="footer-col">
-
-                <h3>Follow Us</h3>
-
-                <ul class="social-list">
-
-                    <li>Google</li>
-
-                    <li>Twitter</li>
-
-                    <li>LinkedIn</li>
-
-                    <li>Instagram</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <!-- Bottom -->
-
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 Portfolio Builder Website.
-                All rights reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
