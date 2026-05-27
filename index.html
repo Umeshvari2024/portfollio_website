@@ -22,6 +22,23 @@
 
 <body>
 
+<script>
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const user =
+        localStorage.getItem("Portfolio_User");
+
+    if (!user) {
+
+        window.location.href = "login.html";
+    }
+
+});
+
+</script>
+  
+
   <!-- ================= NAVBAR ================= -->
 
   <header class="header">
@@ -56,22 +73,16 @@
 
       <div class="nav-right">
 
-        <!-- LOGIN BUTTON -->
-
-        <button class="login-btn">
-
-          Login
-
-        </button>
 
         <!-- SIGNUP BUTTON -->
 
-        <button class="signup-btn">
+        <a href="#"
+   id="logoutBtn"
+   class="login-btn">
 
-          Sign Up
+   Logout
 
-        </button>
-
+</a>
         <!-- DARK MODE -->
 
         <button id="themeToggle">
@@ -565,6 +576,26 @@
   <!-- ================= JS ================= -->
 
   <script src="js/script.js"></script>
+
+
+  <script>
+
+document
+.getElementById("logoutBtn")
+.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    localStorage.removeItem(
+        "Portfolio_User"
+    );
+
+    window.location.href =
+        "login.html";
+
+});
+
+</script>
 
 </body>
 
