@@ -88,46 +88,24 @@ body.dark .nav-links a{
   color:#2563eb;
 }
 
-/* ================= BUTTONS ================= */
-
-.login-btn,
-.signup-btn,
-.btn{
-  padding:12px 22px;
-  border:none;
-  border-radius:10px;
-  cursor:pointer;
-  font-size:15px;
-  font-weight:bold;
-  transition:0.3s;
-  text-decoration:none;
-  display:inline-block;
-}
+/* ================= LOGOUT BUTTON ================= */
 
 .login-btn{
-  background:#e2e8f0;
-  color:#111827;
+    background:#2563eb;
+    color:white;
+    padding:12px 28px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s ease;
+    box-shadow:0 4px 12px rgba(37,99,235,0.3);
 }
 
-.signup-btn{
-  background:#2563eb;
-  color:white;
-}
-
-.btn{
-  background:#2563eb;
-  color:white;
-}
-
-.project-btn{
-  background:white;
-  color:#111827;
-}
-
-.login-btn:hover,
-.signup-btn:hover,
-.btn:hover{
-  transform:translateY(-3px);
+.login-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,99,235,0.4);
 }
 
 /* ================= DARK BUTTON ================= */
@@ -144,72 +122,135 @@ body.dark .nav-links a{
 /* ================= HOME SECTION ================= */
 
 .home{
-  min-height:100vh;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:40px;
-  padding:140px 8% 80px;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:140px 8% 80px;
 
-  background:
-  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
 
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-  color:white;
+    color:white;
 }
 
 .home-text{
-  flex:1;
+    flex:1;
 }
 
 .home-text h3{
-  font-size:28px;
-  margin-bottom:15px;
+    font-size:28px;
+    margin-bottom:15px;
 }
 
 .home-text h1{
-  font-size:60px;
-  margin-bottom:20px;
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.2;
 }
 
 .home-text span{
-  color:#60a5fa;
+    color:#60a5fa;
 }
 
 .home-text h2{
-  font-size:35px;
-  margin-bottom:20px;
+    font-size:35px;
+    margin-bottom:20px;
 }
 
 .home-text p{
-  font-size:18px;
-  max-width:600px;
-  margin-bottom:30px;
+    font-size:18px;
+    max-width:650px;
+    line-height:1.8;
+    margin-bottom:35px;
 }
+
+/* ================= HOME BUTTONS ================= */
 
 .home-buttons{
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
+.home-buttons .btn{
+    padding:15px 35px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(37,99,235,0.4);
+}
+
+.home-buttons .btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-4px);
+}
+
+.project-btn{
+    background:transparent !important;
+    color:white !important;
+    border:2px solid white;
+}
+
+.project-btn:hover{
+    background:white !important;
+    color:#111827 !important;
+}
+
+/* ================= HOME IMAGE ================= */
+
 .home-image{
-  flex:1;
-  display:flex;
-  justify-content:center;
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
 .home-image img{
-  width:350px;
-  height:350px;
-  object-fit:cover;
-  border-radius:25px;
-  border:6px solid white;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:25px;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .home-text h1{
+        font-size:45px;
+    }
+
+    .home-text h2{
+        font-size:28px;
+    }
+
+    .home-buttons{
+        justify-content:center;
+    }
+
+    .home-image img{
+        width:280px;
+        height:280px;
+    }
+
 }
 
 /* ================= COMMON SECTION ================= */
@@ -393,51 +434,73 @@ body.dark .project-card{
 
 /* ================= CONTACT ================= */
 
+/* ================= CONTACT ================= */
+
 .contact{
+    background:
+    linear-gradient(rgba(37,99,235,0.85),rgba(37,99,235,0.85)),
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop');
 
-  background:
-  linear-gradient(rgba(37,99,235,0.85),rgba(37,99,235,0.85)),
-  url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:100px 10%;
+}
 
-  background-size:cover;
-  background-position:center;
-
-  color:white;
+.contact .section-title{
+    color:#fff;
+    text-align:center;
+    margin-bottom:50px;
 }
 
 .contact-container{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
 }
 
 .contact-info,
 .contact-form{
-  background:rgba(255,255,255,0.15);
-  padding:40px;
-  border-radius:20px;
-  backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
 }
 
 .contact-info h3{
-  font-size:32px;
-  margin-bottom:20px;
+    font-size:30px;
+    margin-bottom:20px;
 }
 
 .contact-info p{
-  margin-bottom:15px;
-  font-size:18px;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.contact-info a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    color:#38bdf8;
 }
 
 .contact-form input,
 .contact-form textarea{
-  width:100%;
-  padding:15px;
-  margin-bottom:20px;
-  border:none;
-  border-radius:10px;
-  outline:none;
-  font-size:16px;
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+@media(max-width:768px){
+    .contact-container{
+        grid-template-columns:1fr;
+    }
 }
 
 /* ================= FOOTER ================= */
@@ -597,10 +660,6 @@ body.dark .project-card{
    LOGIN PAGE
 ========================= */
 
-/* =========================
-   LOGIN PAGE
-========================= */
-
 .login-page{
 
     min-height:100vh;
@@ -753,6 +812,61 @@ body.dark .project-card{
     background:#e84118;
 
     transform:translateY(-2px);
+}
+
+/* ================= CERTIFICATIONS SECTION ================= */
+
+.certificates{
+    padding: 80px 10%;
+}
+
+.certificate-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.certificate-card{
+    width: 850px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.certificate-card:hover{
+    transform: translateY(-8px);
+}
+
+.certificate-card h3{
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+.certificate-card ul{
+    padding-left: 25px;
+}
+
+.certificate-card li{
+    color: #e2e8f0;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.certificate-card strong{
+    color: #38bdf8;
+}
+
+@media(max-width:768px){
+
+    .certificate-card{
+        width: 100%;
+        padding: 20px;
+    }
+
 }
 
 /* =========================
